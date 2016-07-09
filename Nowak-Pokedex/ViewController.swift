@@ -49,7 +49,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
+        let poke = self.currentPokemonArray()[indexPath.row];
+        self.performSegueWithIdentifier("PokemonDetailVC", sender: poke)
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -125,6 +126,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }
         } catch let error as NSError {
             print(error.debugDescription)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailVC = segue.destinationViewController as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    detailVC.pokemon = poke
+                }
+            }
         }
     }
     

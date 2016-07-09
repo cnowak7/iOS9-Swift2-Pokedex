@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BBF1CCFDDCD1417E4B765E7 /* Pods_Nowak_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E634689B850817D9F8E96A16 /* Pods_Nowak_Pokedex.framework */; };
+		831671891D30D95200527389 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831671881D30D95200527389 /* Constants.swift */; };
+		83354BBD1D2F49BE00AB4B75 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83354BBC1D2F49BE00AB4B75 /* PokemonDetailVC.swift */; };
 		835A3E111D2758D7009915DB /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835A3E101D2758D7009915DB /* PokeCell.swift */; };
 		8362BEA31D2A498C005AB97A /* CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8362BEA21D2A498C005AB97A /* CsvParser.swift */; };
 		8362BEA71D2A4E82005AB97A /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8362BEA61D2A4E82005AB97A /* pokemon.ttf */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FE06800ADCFFFA67D814716 /* Pods-Nowak-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nowak-Pokedex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nowak-Pokedex/Pods-Nowak-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
+		831671881D30D95200527389 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83354BBC1D2F49BE00AB4B75 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		835A3E101D2758D7009915DB /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		8362BEA21D2A498C005AB97A /* CsvParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
 		8362BEA61D2A4E82005AB97A /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
@@ -34,6 +40,8 @@
 		83CE6BC21D22459700A5D63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CE6BC81D22493500A5D63F /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		83CE6BCD1D224AE000A5D63F /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		C13348235A336D96C755437B /* Pods-Nowak-Pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nowak-Pokedex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nowak-Pokedex/Pods-Nowak-Pokedex.release.xcconfig"; sourceTree = "<group>"; };
+		E634689B850817D9F8E96A16 /* Pods_Nowak_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nowak_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBF1CCFDDCD1417E4B765E7 /* Pods_Nowak_Pokedex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				8362BEA21D2A498C005AB97A /* CsvParser.swift */,
+				831671881D30D95200527389 /* Constants.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -70,6 +80,8 @@
 			children = (
 				83CE6BB51D22459700A5D63F /* Nowak-Pokedex */,
 				83CE6BB41D22459700A5D63F /* Products */,
+				CECCCA5690BEA517F93CC578 /* Pods */,
+				EAB92774935F96D3D47FED2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				83CE6BB81D22459700A5D63F /* ViewController.swift */,
+				83354BBC1D2F49BE00AB4B75 /* PokemonDetailVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -122,6 +135,23 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		CECCCA5690BEA517F93CC578 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE06800ADCFFFA67D814716 /* Pods-Nowak-Pokedex.debug.xcconfig */,
+				C13348235A336D96C755437B /* Pods-Nowak-Pokedex.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAB92774935F96D3D47FED2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E634689B850817D9F8E96A16 /* Pods_Nowak_Pokedex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CE6BC51D22459700A5D63F /* Build configuration list for PBXNativeTarget "Nowak-Pokedex" */;
 			buildPhases = (
+				761EB4F67EBC1141E0453352 /* [CP] Check Pods Manifest.lock */,
 				83CE6BAF1D22459700A5D63F /* Sources */,
 				83CE6BB01D22459700A5D63F /* Frameworks */,
 				83CE6BB11D22459700A5D63F /* Resources */,
+				BBB5763C0D1EC39C8A0956E0 /* [CP] Embed Pods Frameworks */,
+				A499C6F13C3A47D2B71FBBF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +225,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		761EB4F67EBC1141E0453352 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A499C6F13C3A47D2B71FBBF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nowak-Pokedex/Pods-Nowak-Pokedex-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB5763C0D1EC39C8A0956E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nowak-Pokedex/Pods-Nowak-Pokedex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83CE6BAF1D22459700A5D63F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,6 +281,8 @@
 				835A3E111D2758D7009915DB /* PokeCell.swift in Sources */,
 				8362BEA31D2A498C005AB97A /* CsvParser.swift in Sources */,
 				83CE6BB91D22459700A5D63F /* ViewController.swift in Sources */,
+				83354BBD1D2F49BE00AB4B75 /* PokemonDetailVC.swift in Sources */,
+				831671891D30D95200527389 /* Constants.swift in Sources */,
 				83CE6BB71D22459700A5D63F /* AppDelegate.swift in Sources */,
 				83CE6BCE1D224AE000A5D63F /* Pokemon.swift in Sources */,
 			);
@@ -312,6 +395,7 @@
 		};
 		83CE6BC61D22459700A5D63F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE06800ADCFFFA67D814716 /* Pods-Nowak-Pokedex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -326,6 +410,7 @@
 		};
 		83CE6BC71D22459700A5D63F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13348235A336D96C755437B /* Pods-Nowak-Pokedex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
